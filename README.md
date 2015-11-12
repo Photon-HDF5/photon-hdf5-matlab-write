@@ -7,7 +7,7 @@ This repository contains 5 MATLAB scripts to help create YAML and HDF5 necessary
 -Write TEMP YAML File (for nsALEX,smFRET,usALEX, and Minimal required data)
 -Write TEMP DATA HDF5 File and write HDF5 with phconvert
 
-**Initialization of phforge in MATLAB**
+## Initialization of phforge in MATLAB
 
 In order to use phforge within matlab, the PATH must be added to MATLAB. After phforge has been installed and the PATH has been updated (either by "source ~/.bash_profile" or restarting computer), the easiest way to find the PATH for phforge is the command: `which phforge`
 
@@ -18,16 +18,12 @@ The highlighted text is the PATH needed for MATLAB.
 To add PATH to MATLAB, simply use the following lines of code within MATLAB:
 
 ```
-
 PATH = getenv('PATH');
 setenv('PATH', [PATH ':/Copy/Path/Here/']);
-
 ```
-
 After the PATH has been added, phforge can be called with the 'system' MATLAB command.
 
-
-**Create a temporary HDF5 file containing photon-data arrays:**
+## Create a temporary HDF5 file containing photon-data arrays:
 
 The following script will allow creation of a TEMP DATA HDF5 file
 
